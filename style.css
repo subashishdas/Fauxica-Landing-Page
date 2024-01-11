@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@300;400;500&display=swap");
+
+html {
+  font-size: 62.5%;
+}
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav {
+  margin: 4em;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 4.1em;
+  margin: 0;
+}
+nav ul li {
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  color: black;
+  position: relative;
+}
+nav ul li.active:before {
+  position: absolute;
+  content: "";
+  width: 35%;
+  height: 1px;
+  border-bottom: 3px solid rgb(154, 151, 151);
+  bottom: -6px;
+}
+
+/* Main Section */
+main {
+  display: flex;
+  margin-top: 11em;
+  gap: 8em;
+}
+.left-col {
+  width: 45%;
+}
+.right-col {
+  flex-grow: 1;
+}
+.left-col h1 {
+  font-size: 5.2rem;
+  font-family: "Playfair Display", serif;
+  margin: 0;
+  font-style: normal;
+}
+.subhead {
+  color: #1c1c1c;
+  font-size: 1.8rem;
+}
+.btns {
+  display: flex;
+  gap: 2em;
+}
+.primary-btn {
+  font-size: 1.8rem;
+  color: black;
+  background-color: #f2f0df;
+  border-radius: 1.9rem;
+  padding: 1em 2em;
+  text-decoration: none;
+}
+.secondary-btn {
+  color: black;
+  padding: 1em 0;
+  font-size: 1.8rem;
+  text-decoration: none;
+}
+.news {
+  display: flex;
+  gap: 3em;
+  padding: 5em;
+  border: 1px solid black;
+  border-radius: 0.8em;
+  margin-top: 5em;
+}
+.employees {
+  font-size: 3.3rem;
+  font-weight: 200;
+  line-height: 100%;
+  margin: 0;
+}
+.details {
+  font-size: 1.4rem;
+  margin: 0;
+}
+.right-col {
+  display: grid;
+  gap: 2.3em;
+  grid-template-columns: repeat(2, auto);
+  grid-template-areas:
+    "left right"
+    "left bottom";
+}
+.card {
+  display: flex;
+  align-items: end;
+  padding: 1.1em;
+  background-size: 150%;
+  border-radius: 0.8em;
+}
+.card1 {
+  grid-area: left;
+  background-image: url(./images/clothing1.jpg);
+}
+.card2 {
+  background-image: url(./images/clothing2.jpg);
+}
+.card3 {
+  background-image: url(./images/clothing3.jpg);
+}
+.card-details {
+  background: white;
+  padding: 2em;
+  width: 100%;
+  border-radius: 0.6em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.card-details a {
+  text-decoration: none;
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: black;
+}
+.card-details p {
+  font-size: 1.4rem;
+  margin: 0;
+}
+p.product-price {
+  font-size: 1.8rem;
+}
